@@ -1,0 +1,22 @@
+@mixin flex($js: flex-start) {
+    display: flex;
+    align-items: center;
+    justify-content: $js;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition($proparty: all) {
+    transition: $proparty 0.3s ease;
+}
+
+@mixin bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
