@@ -1,0 +1,10 @@
+button {
+    background-color: $color-btn-dark-red;
+    color: $color-white;
+    padding: 15px 120px;
+    font-size: 22px;
+    @include transition;
+    &:hover {
+        background-color: darken($color-btn-dark-red, 10%);
+    }
+}

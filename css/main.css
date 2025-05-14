@@ -74,6 +74,42 @@ a {
   margin-bottom: 70px !important;
 }
 
+button {
+  background-color: #B1040E;
+  color: #ffffff;
+  padding: 15px 120px;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: rgb(127.1270718232, 2.8729281768, 10.0552486188);
+}
+
+.at-stanford {
+  margin-top: 50px;
+  color: black;
+  text-align: center;
+  padding: 0 30px;
+}
+.at-stanford h2 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.at-stanford p {
+  font-size: 42px;
+  font-weight: 300;
+  color: rgb(89.25, 89.25, 89.25);
+  line-height: 47px;
+  margin-bottom: 50px;
+}
+
+body {
+  width: 100vw;
+  height: 3000px;
+  overflow-x: hidden;
+}
+
 .header {
   display: block;
   position: relative;
@@ -84,6 +120,7 @@ a {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  z-index: 1;
 }
 .header .container {
   position: absolute;
@@ -135,6 +172,9 @@ a {
 
 .navigation {
   flex-direction: column;
+  position: sticky;
+  top: -1px;
+  z-index: 10;
 }
 .navigation--top {
   display: flex;
@@ -145,6 +185,7 @@ a {
   position: relative;
   left: -30px;
   width: 100vw;
+  padding-right: 30px;
 }
 .navigation--top .top--left a {
   font-size: 26px;
@@ -189,7 +230,10 @@ a {
   transform: scale(1);
 }
 .navigation--top .top--right .search {
+  position: relative;
+  right: -15px;
   margin-left: 10px;
+  margin-right: 0;
   padding: 15px 20px;
   cursor: pointer;
 }
@@ -212,14 +256,32 @@ a {
   background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.683)), linear-gradient(0deg, transparent 20%, rgba(0, 0, 0, 0.32));
 }
 .navigation__bottom .center--items {
-  padding-top: 10px;
+  padding-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .navigation__bottom .center--items .center--item {
+  position: relative;
   margin-right: 15px;
   padding-right: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.navigation__bottom .center--items .center--item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 50px;
+  transform: scaleX(0);
+  transition: transform 0.2s linear;
+}
+.navigation__bottom .center--items .center--item:hover::after {
+  transform: scale(1);
 }
 .navigation__bottom .center--items .center--item .center--link {
   font-size: 23px;

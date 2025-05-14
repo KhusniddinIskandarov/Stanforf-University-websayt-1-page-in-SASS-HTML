@@ -1,3 +1,8 @@
+body {
+    width: 100vw;
+    height: 3000px;
+    overflow-x: hidden;
+}
 .header {
     display: block;
     position: relative;
@@ -5,6 +10,7 @@
         background-image:  url('/image/Hero-3-2-2048x1362.webp');
         @include bg-image;
         height: 100vh;
+        z-index: 1;
     }
     .container {
         position: absolute;

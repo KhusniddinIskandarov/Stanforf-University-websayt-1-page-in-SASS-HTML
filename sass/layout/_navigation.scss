@@ -1,5 +1,8 @@
 .navigation {
     flex-direction: column;
+    position: sticky;
+    top: -1px;
+    z-index: 10;
     &--top {
         @include flex;
         height: 50px;
@@ -7,6 +10,7 @@
         position: relative;
         left: -30px;
         width: 100vw;
+        padding-right: 30px;
         .top--left {
             a {
                 font-size: 26px;
@@ -48,7 +52,10 @@
                 }
             }
             .search {
+                position: relative;
+                right: -15px;
                 margin-left: 10px;
+                margin-right: 0;
                 padding: 15px 20px;
                 cursor: pointer;
                 i {
@@ -74,11 +81,29 @@
                 background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.683)), 
                 linear-gradient(0deg, transparent 20%, rgba(0, 0, 0, 0.32));
         .center--items {
-            padding-top: 10px;
+            padding-top: 15px;
             @include center;
             .center--item {
+                position: relative;
                 margin-right: 15px;
                 padding-right: 10px;
+                padding-bottom: 10px;
+                cursor: pointer;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    height: 3px;
+                    width: 100%;
+                    left: 0;
+                    background-color: white;
+                    border-radius: 50px;
+                    transform: scaleX(0);
+                    transition: transform 0.2s linear;
+                }
+                &:hover::after {
+                    transform: scale(1);
+                }
                 .center--link {
                     font-size: 23px;
                     font-weight: 600;
