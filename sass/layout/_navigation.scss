@@ -1,0 +1,90 @@
+.navigation {
+    flex-direction: column;
+    &--top {
+        @include flex;
+        height: 50px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, .75), #000);
+        position: relative;
+        left: -30px;
+        width: 100vw;
+        .top--left {
+            a {
+                font-size: 26px;
+                padding-left: 30px;
+            }
+        }
+        .top--center {
+            font-size: 18px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+        .top--right {
+            @include flex;
+            .navigation__items {
+                @include flex;
+                .navigation__item {
+                    position: relative;
+                    padding: 15px 12px;
+                    cursor: pointer;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: -1px;
+                        height: 3px;
+                        width: 100%;
+                        left: 0;
+                        background-color: white;
+                        border-radius: 50px;
+
+                        transform: scaleX(0);
+                        transition: transform 0.2s linear;
+                    }
+                    a {
+                        font-size: 16px;
+                    }
+                    &:hover::after {
+                        transform: scale(1);
+                    }
+                }
+            }
+            .search {
+                margin-left: 10px;
+                padding: 15px 20px;
+                cursor: pointer;
+                i {
+                    margin-right: 5px;
+                    font-size: 17px;
+                }
+                span {
+                    font-size: 19px;
+                }
+                &:hover {
+                    background-color: $color-btn-dark-red;
+                    
+                }
+            }
+        }
+    }
+    &__bottom {
+        position: relative;
+        margin-left: -30px;
+        padding-left: 5px;
+        width: 100vw;
+        height: 145px;
+                background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.683)), 
+                linear-gradient(0deg, transparent 20%, rgba(0, 0, 0, 0.32));
+        .center--items {
+            padding-top: 10px;
+            @include center;
+            .center--item {
+                margin-right: 15px;
+                padding-right: 10px;
+                .center--link {
+                    font-size: 23px;
+                    font-weight: 600;
+                    color: white;
+                }
+            }
+        }
+    }
+}

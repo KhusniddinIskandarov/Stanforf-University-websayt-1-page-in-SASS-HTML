@@ -1,17 +1,19 @@
-// body {
-//     // color: $color-black;
-//     // font-family: $pt-sans;
-//     // font-size: 16px;
-// }
+body {
+    background-color: $color-white;
+    color: $color-white;
+    font-family: $source-code-pro;
+    font-size: 16px;
+}
 
 .container {
     width: $container;
-    margin: 0 30px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 a {
     text-decoration: none;
-    // color: inherit;
+    color: inherit;
 }
 
 // h1 {

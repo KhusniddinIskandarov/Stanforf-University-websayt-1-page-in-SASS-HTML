@@ -1,0 +1,55 @@
+.header {
+    display: block;
+    position: relative;
+    .header__image {
+        background-image:  url('/image/Hero-3-2-2048x1362.webp');
+        @include bg-image;
+        height: 100vh;
+    }
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .stanford__center {
+            @include center;
+            flex-direction: column;
+            .stanford {
+                font-size: 130px;
+                font-weight: normal;
+                position: relative;
+                margin-left: -15px;
+            }
+            .explore-stanford {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: $color-btn-dark-red;
+                @include center;
+                .explore {
+                    padding: 10px 0;
+                    font-size: 23px;
+                    background-color: transparent;
+                    color: $color-white;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        + i {
+                            position: relative;
+                            top: 2px;
+                        }
+                    }
+                }
+                i {
+                    z-index: 2;
+                    background-color: transparent;
+                    color: $color-white;
+                    margin-left: 10px;
+                    transform: rotate(90deg);
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
