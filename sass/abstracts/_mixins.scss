@@ -11,7 +11,7 @@
 }
 
 @mixin transition($proparty: all) {
-    transition: $proparty 0.3s ease;
+    transition: $proparty 0.5s ease;
 }
 
 @mixin bg-image {

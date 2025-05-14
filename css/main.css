@@ -30,7 +30,7 @@ input {
 
 body {
   background-color: #ffffff;
-  color: #ffffff;
+  color: #000000;
   font-family: "Source Code Pro";
   font-size: 16px;
 }
@@ -79,34 +79,165 @@ button {
   color: #ffffff;
   padding: 15px 120px;
   font-size: 22px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 button:hover {
   background-color: rgb(127.1270718232, 2.8729281768, 10.0552486188);
 }
 
-.at-stanford {
-  margin-top: 50px;
+.card__img {
+  display: inline-block;
+  position: relative;
+  width: 588px;
+  height: 340px;
+  overflow: hidden;
+  width: calc(50% - 45px);
+  margin-left: 25px;
+  padding: 0;
+  cursor: pointer;
+}
+.card__img .card__img--header img {
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.card__img .card__img--header .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.726) 10%, rgba(0, 0, 0, 0) 30%);
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+}
+.card__img .card__content {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 25px 20px;
+  z-index: 2;
+}
+.card__img .card__content p {
+  position: relative;
+  top: 10px;
+  left: 3px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+}
+.card__img .card__content h3 {
+  color: white;
+  font-size: 26px;
+  transition: all 0.5s ease;
+}
+.card__img:hover img, .card__img:hover p, .card__img:hover h3 {
+  transform: scale(1.01);
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  height: 340px;
+  width: calc(25% - 37.5px);
+  margin-left: 25px;
+  margin-bottom: 25px;
   color: black;
-  text-align: center;
-  padding: 0 30px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease-in;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0 3px 3px rgba(0, 0, 0, 0.15);
 }
-.at-stanford h2 {
-  font-size: 56px;
+.card .card__image {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.card .card__image:hover {
+  transform: scale(1.01);
+}
+.card .card__image:hover + .card__info h5 {
+  color: #00548f;
+}
+.card .card__info {
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+}
+.card .card__info h3 {
+  position: relative;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #B1040E;
+  margin-bottom: 10px;
+}
+.card .card__info h5 {
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-.at-stanford p {
-  font-size: 42px;
-  font-weight: 300;
-  color: rgb(89.25, 89.25, 89.25);
-  line-height: 47px;
-  margin-bottom: 50px;
+.card .card__info h5:hover {
+  color: #00548f;
+}
+.card:hover {
+  box-shadow: -3px 3px 3px 2px rgba(0, 0, 0, 0.15), 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
+}
+.card:hover .card__image {
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.card:hover .card__image img {
+  transition: all 0.5s ease;
+  transform: scale(1.01);
+}
+
+.card__no-hover {
+  width: calc(33.3333333333% - 25px);
+  box-sizing: inherit;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.card__no-hover .no-hover--info h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+.card__no-hover .no-hover--info p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+.card__no-hover .no-hover--info span {
+  transition: all 0.5s ease;
+}
+.card__no-hover .no-hover--info span a {
+  color: #006cb8;
+  font-size: 18px;
+  font-weight: 500;
+}
+.card__no-hover .no-hover--info span i {
+  font-size: 12px;
+  color: #006cb8;
+  margin-left: 2px;
+  transition: all 0.5s ease;
+}
+.card__no-hover .no-hover--info span:hover a {
+  text-decoration: underline;
+}
+.card__no-hover .no-hover--info span:hover i {
+  margin-left: 5px;
+}
+.card__no-hover:last-child {
+  margin-right: 0;
 }
 
 body {
   width: 100vw;
-  height: 3000px;
   overflow-x: hidden;
 }
 
@@ -140,6 +271,7 @@ body {
   font-weight: normal;
   position: relative;
   margin-left: -15px;
+  color: white;
 }
 .header .container .stanford__center .explore-stanford {
   position: absolute;
@@ -171,6 +303,7 @@ body {
 }
 
 .navigation {
+  color: white;
   flex-direction: column;
   position: sticky;
   top: -1px;
@@ -287,6 +420,108 @@ body {
   font-size: 23px;
   font-weight: 600;
   color: white;
+}
+
+.at-stanford {
+  margin-top: 50px;
+  color: black;
+  text-align: center;
+  padding: 0 30px;
+}
+.at-stanford h2 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.at-stanford p {
+  font-size: 42px;
+  font-weight: 300;
+  color: rgb(89.25, 89.25, 89.25);
+  line-height: 47px;
+  margin-bottom: 50px;
+}
+
+.compus-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 150px;
+  position: relative;
+  color: #000000;
+}
+.compus-news h2 {
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+.compus-news p {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+.compus-news .cards {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.compus-news .button {
+  margin-top: 30px;
+}
+
+.academics {
+  margin-top: 130px;
+  padding: 0 30px;
+  text-align: center;
+}
+.academics .academic {
+  text-align: center;
+}
+.academics .academic h2 {
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+.academics .academic p {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+.academics .cards {
+  display: flex;
+}
+.academics .seven-schools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.academics .seven-schools h3 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.academics .seven-schools ul {
+  margin-top: 20px;
+  display: flex;
+}
+.academics .seven-schools ul li {
+  padding-right: 15px;
+  border-right: 2px solid rgb(0, 0, 0);
+  margin-right: 15px;
+}
+.academics .seven-schools ul li a {
+  font-size: 24px;
+  color: #00548f;
+}
+.academics .seven-schools ul li:last-child {
+  margin-right: 0;
+  border-right: none;
+}
+.academics .button {
+  margin-top: 60px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

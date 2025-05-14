@@ -1,6 +1,5 @@
 body {
     width: 100vw;
-    height: 3000px;
     overflow-x: hidden;
 }
 .header {
@@ -26,6 +25,7 @@ body {
                 font-weight: normal;
                 position: relative;
                 margin-left: -15px;
+                color: white;
             }
             .explore-stanford {
                 position: absolute;
