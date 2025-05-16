@@ -548,6 +548,7 @@ body {
   text-align: center;
 }
 .research .research__image {
+  cursor: pointer;
   position: relative;
 }
 .research .research__image .research__img {
@@ -754,6 +755,74 @@ body {
 }
 .health__care .button__group {
   text-align: center;
+}
+
+.section--research__image {
+  cursor: pointer;
+}
+.section--research__image .research__image {
+  position: relative;
+  text-align: center;
+}
+.section--research__image .research__image .research__img {
+  background-image: url("/image/yannie-banner.webp");
+  height: 640px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 70px;
+}
+.section--research__image .research__image .research__img--hover {
+  position: absolute;
+  height: 100%;
+  top: -35px;
+  left: 320px;
+  color: white;
+  padding-top: 100px;
+  display: none;
+}
+.section--research__image .research__image .research__img--hover img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.section--research__image .research__image .research__img--hover h3 {
+  font-size: 33px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 42px;
+}
+.section--research__image .research__image .research__img--hover h4 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section--research__image .research__image .research__img--hover p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.section--research__image .research__image .research__img--hover span {
+  display: block;
+}
+.section--research__image .research__image .research__img--hover span a {
+  font-size: 18px;
+  font-weight: 600;
+}
+.section--research__image .research__image .research__img--hover span i {
+  font-size: 11px;
+  position: relative;
+}
+.section--research__image .research__image .research__img--hover span:hover a {
+  text-decoration: underline;
+}
+.section--research__image .research__image .research__img--hover span:hover i {
+  padding-left: 2px;
+}
+.section--research__image .research__image:active .research__img {
+  filter: blur(15px);
+}
+.section--research__image .research__image:active .research__img--hover {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -124,6 +124,7 @@
     // height: 100%;
     // width: 100%;
     .research__image {
+        cursor: pointer;
         position: relative;
         .research__img {
             background-image: url('/image/20250320_Renee_Zhao-5.webp');
@@ -354,5 +355,77 @@
     }
     .button__group {
         text-align: center;
+    }
+}
+
+.section--research__image {
+    cursor: pointer;
+    .research__image {
+        position: relative;
+        text-align: center;
+        .research__img {
+            background-image: url('/image/yannie-banner.webp');
+            height: 640px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 70px;
+        }
+        .research__img--hover {
+            position: absolute;
+            height: 100%;
+            top: -35px;
+            left: 320px;
+            color: white;
+            padding-top: 100px;
+            display: none;
+            img {
+                    width: 200px;
+                    border-radius: 50%;
+                    margin-bottom: 20px;
+            }
+            h3 {
+                    font-size: 33px;
+                    font-weight: 400;
+                    margin-bottom: 30px;
+                    line-height: 42px;
+            }
+            h4 {
+                    font-size: 23px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+            }
+            p {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+            }
+            span {
+                    display: block;
+                    a {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    i {
+                        font-size: 11px;
+                        position: relative;
+                    }
+                    &:hover {
+                        a {
+                            text-decoration: underline;
+                        }
+                        i {
+                            padding-left: 2px;
+                        }
+                    }
+            }
+        }
+        &:active {
+            .research__img {
+                filter: blur(15px);
+            }
+            .research__img--hover {
+                display: block;
+            }
+        }
     }
 }
