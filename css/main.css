@@ -885,4 +885,51 @@ body {
   text-align: center;
 }
 
+.admission {
+  padding: 0 45px 0 30px;
+  margin: 150px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.admission .admission__intro {
+  text-align: center;
+}
+.admission .admission__intro h2 {
+  font-size: 55px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.admission .admission__intro p {
+  font-size: 28px;
+  line-height: 42px;
+}
+.admission img {
+  margin-top: 50px;
+}
+.admission .admission__info {
+  margin-top: 40px;
+  display: flex;
+  margin-bottom: 50px;
+}
+.admission .admission__info span {
+  width: 50%;
+}
+.admission .admission__info span h2 {
+  margin-bottom: 15px;
+  font-size: 23px;
+  font-weight: 600;
+}
+.admission .admission__info span p {
+  font-size: 18px;
+  line-height: 27px;
+}
+.admission .admission__info span:first-child {
+  margin-right: 70px;
+}
+.admission .button__group {
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
