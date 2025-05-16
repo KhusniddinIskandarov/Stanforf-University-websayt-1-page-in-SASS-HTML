@@ -634,4 +634,94 @@ body {
   font-size: 23px;
 }
 
+.upcoming-events {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 50px 30px;
+  background-color: #F4F4F4;
+}
+.upcoming-events h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 55px;
+  font-weight: bold;
+}
+.upcoming-events .cards {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.upcoming-events .cards .card {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: relative;
+  width: 22.5%;
+  margin-right: 30px !important;
+  box-sizing: border-box !important;
+  height: 500px;
+  cursor: pointer;
+}
+.upcoming-events .cards .card .card__image img {
+  transition: all 0.5s ease;
+}
+.upcoming-events .cards .card .card__date {
+  position: absolute;
+  top: 235px;
+  left: 25px;
+  color: white;
+  width: 75px;
+  background-color: #2F2424;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.upcoming-events .cards .card .card__date p {
+  font-weight: 400;
+  font-size: 12px;
+}
+.upcoming-events .cards .card .card__date span {
+  position: relative;
+  left: -2px;
+  font-weight: bold;
+  font-size: 26px;
+}
+.upcoming-events .cards .card .card__info {
+  padding-bottom: 50px;
+}
+.upcoming-events .cards .card .card__info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #820000;
+}
+.upcoming-events .cards .card .card__info h5 {
+  font-weight: 600;
+}
+.upcoming-events .cards .card .card__info p {
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.742);
+}
+.upcoming-events .cards .card:hover .card__image img {
+  transform: scale(1.03);
+}
+.upcoming-events .cards .card:hover .card__info h5 {
+  color: #00548f;
+}
+.upcoming-events .cards .card:last-child {
+  margin-right: 0 !important;
+}
+.upcoming-events .cards .card:first-child .card__info {
+  position: absolute;
+  bottom: 55px;
+}
+.upcoming-events .button__group {
+  margin-top: 30px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
