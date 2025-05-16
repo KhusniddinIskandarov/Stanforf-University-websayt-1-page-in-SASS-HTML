@@ -887,7 +887,7 @@ body {
 
 .admission {
   padding: 0 45px 0 30px;
-  margin: 150px 0 50px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -930,6 +930,182 @@ body {
 }
 .admission .button__group {
   text-align: center;
+}
+
+.footer .footer__section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 45px 0 30px;
+}
+.footer .footer__section .footer__section--social {
+  display: flex;
+  margin-left: auto;
+}
+.footer .footer__section .footer__section--social li {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-right: 20px;
+}
+.footer .footer__section .footer__section--social li i {
+  font-size: 35px;
+}
+.footer .footer__section .footer__section--social li:nth-child(1):hover {
+  color: #3b579d;
+}
+.footer .footer__section .footer__section--social li:nth-child(2):hover {
+  color: #1da1f2;
+}
+.footer .footer__section .footer__section--social li:nth-child(3):hover {
+  color: #d73676;
+}
+.footer .footer__section .footer__section--social li:nth-child(4):hover {
+  color: #0072b1;
+}
+.footer .footer__section .footer__section--social li:nth-child(5):hover {
+  color: #cd201f;
+}
+.footer .footer__section .footer__section--social li:nth-child(6):hover {
+  color: #555;
+}
+.footer .footer__section .footer__section--social li:last-child {
+  margin-right: 0;
+}
+.footer .footer__section .footer__menu {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__section .footer__menu .footer__menu--left {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__section .footer__menu .footer__menu--left div {
+  display: flex;
+}
+.footer .footer__section .footer__menu .footer__menu--left div span {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.footer .footer__section .footer__menu .footer__menu--left div span h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #820000;
+  letter-spacing: -0.5px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  cursor: default;
+}
+.footer .footer__section .footer__menu .footer__menu--left div span a {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.footer .footer__section .footer__menu .footer__menu--left div span a:hover {
+  color: #006cb8;
+  text-decoration: underline;
+}
+.footer .footer__section .footer__menu .footer__menu--left div span:nth-child(5) {
+  margin-right: 0;
+}
+.footer .footer__section .footer__menu .footer__menu--left div span:nth-child(6) {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.footer .footer__section .footer__menu .footer__menu--left div span:nth-child(7) {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.footer .footer__section .footer__menu .footer__menu--left div span:nth-child(8) {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.footer .footer__section .footer__menu .footer__menu--left div:last-child {
+  position: relative;
+  left: 208px;
+  top: -130px;
+}
+.footer .footer__section .footer__menu .footer__menu--left div:last-child span:nth-child(1) {
+  position: relative;
+  top: -30px;
+}
+.footer .footer__section .footer__menu .footer__menu--left div:last-child span:nth-child(2) {
+  position: relative;
+  top: -10px;
+  left: -7px;
+}
+.footer .footer__section .footer__menu .footer__menu--left div:last-child span:nth-child(3) {
+  position: relative;
+  left: -7px;
+}
+.footer .footer__section .footer__menu .footer__menu--right {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+}
+.footer .footer__section .footer__menu .footer__menu--right a {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 18px;
+  padding: 8px;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.footer .footer__section .footer__menu .footer__menu--right a:hover {
+  color: #b1040e;
+  border: 1px solid #b1040e;
+}
+.footer .footer__bottom {
+  margin-top: -90px;
+  background-color: #8C1515;
+  color: white;
+  display: flex;
+  padding: 25px 50px;
+}
+.footer .footer__bottom .footer__bottom--logo {
+  cursor: pointer;
+}
+.footer .footer__bottom .footer__bottom--logo h2 {
+  margin-right: 50px;
+  font-size: 28px;
+}
+.footer .footer__bottom .footer__bottom--logo p {
+  margin-right: 50px;
+  font-size: 20px;
+}
+.footer .footer__bottom .footer__bottom--menu div {
+  display: flex;
+  margin-bottom: 15px;
+}
+.footer .footer__bottom .footer__bottom--menu div:last-child {
+  margin-bottom: 0;
+}
+.footer .footer__bottom .footer__bottom--menu div h4 {
+  margin-right: 30px;
+  font-size: 18px;
+}
+.footer .footer__bottom .footer__bottom--menu div h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer .footer__bottom .footer__bottom--menu div a {
+  font-size: 16px;
+  margin-right: 30px;
+}
+.footer .footer__bottom .footer__bottom--menu div a:hover {
+  text-decoration: underline;
+}
+.footer .footer__bottom .footer__bottom--menu div p {
+  margin-right: 20px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

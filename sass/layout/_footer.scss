@@ -1,0 +1,194 @@
+.footer {
+    .footer__section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 45px 0 30px;
+        .footer__section--social {
+            display: flex;
+            margin-left: auto;
+            li {
+                cursor: pointer;
+                @include transition;
+                margin-right: 20px;
+                i {
+                    font-size: 35px;
+                }
+                &:nth-child(1) {
+                        &:hover {
+                            color: #3b579d;
+                        }
+                    }
+                    &:nth-child(2) {
+                        &:hover {
+                            color: #1da1f2;
+                        }
+                    }
+                    &:nth-child(3) {
+                        &:hover {
+                            color: #d73676;
+                        }
+                    }
+                    &:nth-child(4) {
+                        &:hover {
+                            color: #0072b1;
+                        }
+                    }
+                    &:nth-child(5) {
+                        &:hover {
+                            color: #cd201f;
+                        }
+                    }
+                    &:nth-child(6) {
+                        &:hover {
+                            color: #555;
+                        }
+                    }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .footer__menu {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            .footer__menu--left {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                div { 
+                    display: flex;
+                    span {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 50px;
+                        h2 {
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #820000;
+                            letter-spacing: -0.5px;
+                            line-height: 23px;
+                            text-transform: uppercase;
+                            margin-bottom: 8px;
+                            cursor: default;
+                        }
+                        a {
+                            font-size: 17px;
+                            font-weight: 400;
+                            line-height: 22px;
+                            margin-bottom: 15px;
+                            &:hover {
+                                color: #006cb8;
+                                text-decoration: underline;
+                            }
+                        }
+                        &:nth-child(5) {
+                            margin-right: 0;
+                        }
+                        &:nth-child(6){
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                        }
+                        &:nth-child(7){
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                        }
+                        &:nth-child(8){
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+
+                    &:last-child {
+                        position: relative;
+                        left: 208px;
+                        top: -130px;
+                        span {
+                            &:nth-child(1) {
+                                position: relative;
+                                top: -30px;
+                            }
+                            &:nth-child(2) {
+                                position: relative;
+                                top: -10px;
+                                left: -7px;
+                            }
+                            &:nth-child(3) {
+                                position: relative;
+                                left: -7px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer__menu--right {
+                display: flex;
+                flex-direction: column;
+                width: 16%;
+                a {
+                    width: 100%;
+                    font-size: 18px;
+                    margin-bottom: 18px;
+                    padding: 8px;
+                    border: 1px solid black;
+                    text-align: center;
+                    font-weight: 500;
+                    transition: all 0.2s ease;
+                    &:hover {
+                        color: #b1040e;
+                        border: 1px solid #b1040e;
+                    }
+                }
+            }
+        }
+    }
+    .footer__bottom {
+        margin-top: -90px;
+        background-color: #8C1515;
+        color: white;
+        display: flex;
+        padding: 25px 50px;
+        .footer__bottom--logo {
+            cursor: pointer;
+            h2 {
+                margin-right: 50px;
+                font-size: 28px;
+            }
+            p {
+                margin-right: 50px;
+                font-size: 20px;
+            }
+        }
+        .footer__bottom--menu {
+            div {
+                display: flex;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                h4 {
+                    margin-right: 30px;
+                    font-size: 18px;
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+                a {
+                    font-size: 16px;
+                    margin-right: 30px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                p {
+                    margin-right: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
