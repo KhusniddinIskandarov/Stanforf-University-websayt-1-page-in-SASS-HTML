@@ -201,6 +201,9 @@ button:hover {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+.card__no-hover .no-hover--info {
+  text-align: left;
+}
 .card__no-hover .no-hover--info h3 {
   margin: 10px 0;
   font-size: 24px;
@@ -721,6 +724,35 @@ body {
 }
 .upcoming-events .button__group {
   margin-top: 30px;
+  text-align: center;
+}
+
+.health__care {
+  margin-top: 80px;
+  margin: 80px 30px 50px;
+}
+.health__care .health__care--intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.health__care .health__care--intro h2 {
+  font-size: 55px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.health__care .health__care--intro p {
+  font-size: 28px;
+  font-weight: 400;
+}
+.health__care .cards {
+  display: flex;
+  margin-bottom: 30px;
+}
+.health__care .cards .card__no-hover .no-hover--info span a {
+  font-size: 18px;
+  font-weight: 600;
+}
+.health__care .button__group {
   text-align: center;
 }
 
